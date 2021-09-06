@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation formlaire avec forms[]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Inscription</h2>
+        </div>
+        
+        <form class="form-connect" name="connect" id="formConnect">
+            <div  name="section-firstname">
+                <label>Prénom</label>
+                <input type="text" name="firstname"  maxlength="20" >
+                <small>champ obligatoire</small>
+            </div>
+            <div  name="section-name">
+                <label>Nom</label>
+                <input type="text" name="name"  maxlength="10">
+                <small>champ obligatoire</small>
+            </div>
+            <div name="section-pseudo">
+                <label>Pseudo - optionnel</label>
+                <input type="text" name="pseudo">
+                <small>entre 3 et 10 caractères, pas de restriction</small>
+            </div>
+            <div class="connect-mail" name="section-mail">
+                <label>Mail</label>
+                <input type="text" name="mail" >
+                <small></small>
+            </div>
+          
+            <button type="submit" value="envoyer">Envoyer</button>
+        </form>
+    </div>
+
+    
+    <script src="mainv1.js"></script>
+    <!--<script src="mainv2.js"></script>-->
+</body>
+</html>
